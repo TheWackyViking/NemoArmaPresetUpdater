@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<addons-presets>
+  <last-update>2020-02-23T14:40:04.6060384+01:00</last-update>
+  <published-ids>
+    <id>steam:450814997</id>
+    <id>steam:620019431</id>
+    <id>steam:713709341</id>
+    <id>steam:498740884</id>
+    <id>steam:914182380</id>
+  </published-ids>
+  <dlcs-appids>
+    <id>1042220</id>
+  </dlcs-appids>
+</addons-presets>
