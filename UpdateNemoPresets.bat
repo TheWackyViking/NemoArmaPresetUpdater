@@ -1,9 +1,17 @@
 @echo off
-set gitbash="C:\Program Files\Git\git-bash.exe"
 set presetLoc=%~dp0
 
-git clone https://github.com/TheWackyViking/NemoArmaPresetUpdater.git temp
+rem Download files from GitHub repo
+rem bitsadmin.exe /transfer "JobName" https://github.com/TheWackyViking/NemoArmaPresetUpdater/archive/master.zip C:\temp\NemoPresets2.zip
 
-XCOPY /E /Y "temp" "%presetLoc%"
-RMDIR /S /Q "temp"
+rem Extract downloaded files
+tar -xf NemoPresets2.zip
+
+rem Copy folder content to Preset-folder
+rem XCOPY /E /Y "temp" "%presetLoc%"
+
+rem Remove files from C:\temp
+rem RMDIR /S /Q "temp"
+
+rem Keep window open until user has acknowledged completion of script. 
 set /p id="Hit enter to close..."
